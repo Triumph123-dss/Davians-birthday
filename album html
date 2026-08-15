@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Davian's Birthday Album 💙</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: linear-gradient(
+                135deg,
+                #fff8f2,
+                #ffe8dc,
+                #fffaf7
+            );
+            color: #4a2c2a;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        .album {
+            max-width: 650px;
+            margin: auto;
+            padding: 45px 20px;
+        }
+
+        .album-cover {
+            padding-bottom: 30px;
+        }
+
+        .album-icon {
+            font-size: 58px;
+            margin-bottom: 15px;
+        }
+
+        .album-cover h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .album-cover p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .photo-page {
+            display: none;
+            background: white;
+            padding: 15px;
+            border-radius: 25px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+            animation: pageIn 0.6s ease;
+        }
+
+        .photo-page.active {
+            display: block;
+        }
+
+        @keyframes pageIn {
+            from {
+                opacity: 0;
+                transform: translateX(35px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .photo-page img {
+            width: 100%;
+            max-height: 520px;
+            object-fit: cover;
+            border-radius: 18px;
+            display: block;
+        }
+
+        .photo-text {
+            padding: 25px 12px 20px;
+        }
+
+        .photo-text h2 {
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .photo-text p {
+            font-size: 16px;
+            line-height: 1.85;
+            margin-bottom: 16px;
+        }
+
+        .prayer {
+            background: #fff5ef;
+            padding: 20px;
+            border-radius: 18px;
+            font-size: 16px;
+            line-height: 1.8;
+            font-style: italic;
+        }
+
+        .page-number {
+            margin-top: 20px;
+            font-size: 15px;
+            opacity: 0.65;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .nav-button {
+            border: none;
+            padding: 14px 22px;
+            border-radius: 30px;
+            background: #8b4a3c;
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .nav-button:active {
+            transform: scale(0.96);
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 13px 25px;
+            background: white;
+            color: #8b4a3c;
+            text-decoration: none;
+            border: 2px solid #8b4a3c;
+            border-radius: 30px;
+        }
+
+        footer {
+            margin-top: 35px;
+            padding-bottom: 25px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+
+            .album-cover h1 {
+                font-size: 32px;
+            }
+
+            .photo-page img {
+                max-height: 450px;
+            }
+
+            .photo-text h2 {
+                font-size: 24px;
+            }
+
+            .navigation {
+                gap: 10px;
+            }
+
+            .nav-button {
+                padding: 13px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="album">
+
+    <!-- ALBUM TITLE -->
+
+    <div class="album-cover">
+
+        <div class="album-icon">
+            📖✨
+        </div>
+
+        <h1>
+            Davian's Birthday Album 💙
+        </h1>
+
+        <p>
+            A little collection of beautiful memories
+            from two wonderful years of love and happiness.
+        </p>
+
+    </div>
+
+
+    <!-- PAGE 1 -->
+
+    <div class="photo-page active">
+
+        <img src="davian.jpg" alt="Davian">
+
+        <div class="photo-text">
+
+            <h2>
+                Our Precious Little Prince 👑
+            </h2>
+
+            <p>
+                Look at that beautiful smile. ❤️
+                You have brought so much joy and happiness
+                into the lives of everyone who knows and
+                loves you.
+            </p>
+
+            <p>
+                May you never lose that beautiful light
+                in your eyes. May your childhood be filled
+                with laughter, love and unforgettable
+                moments.
+            </p>
+
+            <div class="prayer">
+
+                🙏 <strong>Our Prayer</strong><br><br>
+
+                May God watch over you every day of your
+                life. May He protect you from harm, guide
+                your steps and surround you with people
+                who genuinely love you.
+
+                May you grow in wisdom, strength,
+                grace and favor.
+
+                Amen. ❤️
+
+            </div>
+
+        </div>
+
+        <div class="page-number">
+            Page 1 of 5
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 2 -->
+
+    <div class="photo-page">
+
+        <img src="Davian2.jpg" alt="Davian">
+
+        <div class="photo-text">
+
+            <h2>
+                Growing Into Something Beautiful 🌟
+            </h2>
+
+            <p>
+                Two years may seem like a short time,
+                but look at how much happiness you have
+                already brought into this world.
+            </p>
+
+            <p>
+                May every new year of your life give you
+                more reasons to smile. May you always know
+                that you are deeply loved and wonderfully
+                precious.
+            </p>
+
+            <div class="prayer">
+
+                🙏 <strong>Our Prayer</strong><br><br>
+
+                May God bless your future beyond what we
+                can imagine. May doors of greatness open
+                for you.
+
+                May your life be filled with divine favor,
+                good health, peace and endless reasons
+                to rejoice.
+
+                Amen. 💙
+
+            </div>
+
+        </div>
+
+        <div class="page-number">
+            Page 2 of 5
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 3 -->
+
+    <div class="photo-page">
+
+        <img src="Davian3.jpg" alt="Davian">
+
+        <div class="photo-text">
+
+            <h2>
+                A Smile Worth Keeping Forever 😊
+            </h2>
+
+            <p>
+                Some moments are too beautiful to describe
+                with words. This is one of those moments.
+            </p>
+
+            <p>
+                May you continue to grow with a heart full
+                of kindness, joy and love. May your smile
+                always brighten the lives of those around you.
+            </p>
+
+            <div class="prayer">
+
+                🙏 <strong>Our Prayer</strong><br><br>
+
+                May your smile never be replaced by sorrow.
+                May God give you a peaceful heart, a joyful
+                spirit and a life filled with beautiful
+                surprises.
+
+                May goodness and mercy follow you all
+                your days.
+
+                Amen. ❤️
+
+            </div>
+
+        </div>
+
+        <div class="page-number">
+            Page 3 of 5
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 4 -->
+
+    <div class="photo-page">
+
+        <img src="Davianfamily.jpg" alt="Davian and family">
+
+        <div class="photo-text">
+
+            <h2>
+                Surrounded By Love ❤️
+            </h2>
+
+            <p>
+                Family is one of life's greatest gifts.
+                These are the moments that become precious
+                memories as the years go by.
+            </p>
+
+            <p>
+                Davian, may you always be surrounded by
+                people who love you, encourage you, protect
+                you and celebrate every beautiful step
+                you take in life.
+            </p>
+
+            <div class="prayer">
+
+                🙏 <strong>Our Prayer</strong><br><br>
+
+                May God preserve your family and keep love
+                at the center of your home.
+
+                May peace, unity, laughter and understanding
+                always fill your family.
+
+                Amen. 🙏
+
+            </div>
+
+        </div>
+
+        <div class="page-number">
+            Page 4 of 5
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 5 -->
+
+    <div class="photo-page">
+
+        <img src="Davianparent.jpg" alt="Davian with parents">
+
+        <div class="photo-text">
+
+            <h2>
+                Loved Beyond Words 💕
+            </h2>
+
+            <p>
+                There is something beautiful about seeing
+                a child surrounded by genuine love.
+
+                You are a blessing, Davian, and your life
+                is already a beautiful story being written
+                one moment at a time.
+            </p>
+
+            <p>
+                May you grow knowing just how special you
+                are. May your heart always remember the love
+                that surrounded you from the very beginning.
+            </p>
+
+            <div class="prayer">
+
+                🙏 <strong>Our Prayer</strong><br><br>
+
+                May God's hand remain upon your life.
+
+                May He lead you into greatness, protect you
+                wherever you go, bless the work of your hands
+                and make your future brighter than your past.
+
+                May you become everything God has created
+                you to be.
+
+                Amen. ❤️
+
+            </div>
+
+        </div>
+
+        <div class="page-number">
+            Page 5 of 5
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <div class="navigation">
+
+        <button
+            class="nav-button"
+            onclick="previousPage()">
+            ← Previous
+        </button>
+
+        <button
+            class="nav-button"
+            onclick="nextPage()">
+            Next →
+        </button>
+
+    </div>
+
+
+    <!-- BACK TO HOME -->
+
+    <a href="Index.html" class="back-button">
+        🏠 Back to Birthday
+    </a>
+
+
+    <footer>
+        Made with ❤️ especially for Davian
+    </footer>
+
+</div>
+
+
+<script>
+
+    let currentPage = 0;
+
+    const pages = document.querySelectorAll(".photo-page");
+
+
+    function showPage(number) {
+
+        pages.forEach(function(page) {
+            page.classList.remove("active");
+        });
+
+        pages[number].classList.add("active");
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+
+
+    function nextPage() {
+
+        if (currentPage < pages.length - 1) {
+
+            currentPage++;
+
+            showPage(currentPage);
+
+        } else {
+
+            window.location.href = "daddy.html";
+
+        }
+
+    }
+
+
+    function previousPage() {
+
+        if (currentPage > 0) {
+
+            currentPage--;
+
+            showPage(currentPage);
+
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
